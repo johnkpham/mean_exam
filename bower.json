@@ -1,0 +1,19 @@
+{
+  "name": "exam",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "John Pham"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

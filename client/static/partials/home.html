@@ -1,0 +1,28 @@
+<div ng-controller = 'HomeController'>
+	<a href = '#/'>Home</a> |
+	<a href = '#/index'>Logout</a> |
+	<a href = '#/new_question'>Add a Question</a>
+
+	<p><a href = '#/play'>Play</a></p>
+	<p>Click the button above to start</p>
+
+	<label>Search:</label>
+	<input type = 'text' ng-model = 'filter_name'>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Score</th>
+				<th>Percentage</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat = 'user in users | filter:filter_name track by $index'>
+				<td ng-bind = 'user.username'></td>
+				<td ng-bind = 'user.score'></td>
+				<td ng-bind = 'user.percentage'></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

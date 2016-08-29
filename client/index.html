@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+	<head>
+		<meta charset = 'UTF-8'>
+		<title>Trivia Game</title>
+
+		<!-- Angular -->
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js"></script>
+
+		<!-- Module, Factories, Controllers -->
+		<script type = 'text/javascript' src = 'js/config/config.js'></script>
+
+		<script type = 'text/javascript' src = 'js/factories/userFactory.js'></script>
+		<script type = 'text/javascript' src = 'js/factories/questionFactory.js'></script>
+		<script type = 'text/javascript' src = 'js/factories/answerFactory.js'></script>
+
+		<script type = 'text/javascript' src = 'js/controllers/LoginController.js'></script>
+		<script type = 'text/javascript' src = 'js/controllers/HomeController.js'></script>
+		<script type = 'text/javascript' src = 'js/controllers/NewQuestionController.js'></script>
+		<script type = 'text/javascript' src = 'js/controllers/QuestionController.js'></script>
+		<script type = 'text/javascript' src = 'js/controllers/NewAnswerController.js'></script>
+
+		<!-- CSS -->
+		<link rel='stylesheet' href='./../static/style.css'>
+
+	</head>
+	<body>
+		<!-- <div id='container'>
+			<a href='#/home'>Home</a> |
+			<a href='#/login'>Login</a> |
+			<a href='#/question'>Question</a> |
+			<a href='#/customers'>Customers</a> -->
+		<div ng-view=''></div>
+		<!-- </div> -->
+	</body>
+</html>

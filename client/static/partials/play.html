@@ -1,0 +1,19 @@
+<div ng-controller = 'HomeController'>
+	<h1>Hi, <span ng-bind = 'username'></span>!</h1>
+	<p>Choose an answer for each of the questions and submit the test once done. Good luck!</p>
+
+	<form ng-submit='add()'>
+		<div id = 'questions'>
+			<div class = 'question' ng-repeat = 'question in questions '>
+
+				<p><span ng-bind = 'answer.username'></span> says:</p>
+				<h4 ng-bind = 'answer.text'></h4>
+				<p ng-bind = 'answer.details'></p>
+				<span><span ng-bind = 'answer.likes'></span> likes</span>
+				<button ng-click = 'like(answer)'>Like!</button>
+			</div>
+		</div>
+
+
+	</form>
+</div>
